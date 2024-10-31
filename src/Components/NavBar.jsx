@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../assets/Logo.png";
+import { FaTimes, FaBars } from "react-icons/fa";
 import { Link } from "react-scroll";
 
 const NavBar = () => {
@@ -71,13 +71,10 @@ const NavBar = () => {
         </div>
         <div>
           <button
-            className="border-2 z-50 relative border-s4/25 rounded-full flex justify-center items-center size-10"
+            className="text-xl text-p1 size-10"
             onClick={() => setIsOpen(!isOpen)}
           >
-            <img
-              src={`../src/assets/${isOpen ? "close" : "magic"}.svg`}
-              className="object-contain"
-            />
+            {isOpen ? <FaBars /> : <FaTimes />}
           </button>
           <div
             className={`${
