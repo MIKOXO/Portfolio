@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaTimes, FaBars } from "react-icons/fa";
 import { Link } from "react-scroll";
+import Logo from "../assets/Logo.png";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -71,10 +72,10 @@ const NavBar = () => {
         </div>
         <div>
           <button
-            className="text-xl text-p1 size-10"
+            className="text-2xl text-p1"
             onClick={() => setIsOpen(!isOpen)}
           >
-            {isOpen ? <FaBars /> : <FaTimes />}
+            {isOpen ? <FaTimes /> : <FaBars />}
           </button>
           <div
             className={`${
